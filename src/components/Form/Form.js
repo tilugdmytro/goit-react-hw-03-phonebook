@@ -4,8 +4,8 @@ import s from "./Form.module.css";
 
 class Form extends Component {
   state = {
-    name: " ",
-    number: " ",
+    name: "",
+    number: "",
   };
 
   static propTypes = {
@@ -24,14 +24,14 @@ class Form extends Component {
   };
 
   reset = () => {
-    this.setState({ name: " ", number: " " });
+    this.setState({ name: "", number: "" });
   };
 
   render() {
     return (
       <form className={s.form} onSubmit={this.handleSubmit}>
         <label className={s.label}>
-          Name{" "}
+          Name{""}
           <input
             className={s.input}
             type="text"
@@ -44,7 +44,7 @@ class Form extends Component {
           />
         </label>
         <label className={s.label}>
-          Number{" "}
+          Number{""}
           <input
             className={s.input}
             type="tel"

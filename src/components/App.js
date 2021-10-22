@@ -7,7 +7,7 @@ import { v4 as uuidv4 } from "uuid";
 class App extends Component {
   state = {
     contacts: [],
-    filter: " ",
+    filter: "",
   };
 
   addContact = ({ name, number }) => {
